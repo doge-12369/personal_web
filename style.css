@@ -1,0 +1,188 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Minecraft", "Sans-serif";
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url(assets/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 100vh;
+    animation: img_slide 25s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes img_slide {
+    0% {
+        background-image: url(assets/bg1.png);
+    }
+    25% {
+        background-image: url(assets/bg2.png);
+    }
+    50% {
+        background-image: url(assets/bg3.png);
+    }
+    75% {
+        background-image: url(assets/bg4.png);
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: -1%;
+    -webkit-text-stroke: 0.5px black; /* width and color */
+    text-align: center;
+    font-size: 5.5rem;
+    margin-right: auto;
+    margin-left: auto;  
+    color: #d0c5d0;
+    transform: perspective(200px) rotateX(5deg); 
+    filter: drop-shadow(0px 8px 0px #3c3837);
+}
+
+#help {
+    font-size: 0.5rem;
+    margin-top: 45vh;
+    margin-left: 45vw;
+}
+
+ul img {
+    border: 2px solid white;
+    margin-top: 1%;
+}
+
+.profile_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5% ;
+    width: 50%;
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.wrapper {
+    margin-top: 3.5%;
+    background: rgba(0, 0, 0, 0.75);
+    font-family: "minecraftia";
+    color: white;
+    padding: 5px;
+    width: 70vw;
+    height: 70vh;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    display: flex;
+    border-image: url("./assets/dialog_background_hollow_7.png") 33 8 8 8;
+    border-left: 8px solid;
+    border-right: 8px solid;
+    border-bottom: 8px solid;
+    border-top: 33px solid;
+}
+
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 22.5%;
+    background-color: #696969;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    border-right: 9px solid #434343;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 77.5%;
+    margin-left: 22.5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.sidenav ul {
+    padding: 10px;
+}
+
+.sidenav ul li{
+    background: #727272;
+    color: rgb(247, 247, 247);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5), inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    padding: .5rem .5rem;
+    margin-bottom: .75rem;
+}
+
+.sidenav ul li:hover{
+    background: rgba(115, 107, 221, 1);
+}
+
+.sidenav ul li i{
+    margin-right: 8px;
+}
+
+.wrapper .sidenav .socials {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    display: flex;
+}
+
+.wrapper .sidenav .socials a {
+    margin: 0 10px;
+    background: #727272;
+    color: rgb(247, 247, 247);
+    box-shadow: inset 3px 3px 0 rgba(255, 255, 255, 0.5),
+              inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section {
+    height: 70vh;
+    padding-left: 3%;
+}
+
+.main-content {
+    overflow: auto;
+}
+
+.button {
+    height: 1vh;
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #434343
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c6c6c6
+}
+
+h2 {
+    text-decoration: underline;
+}
